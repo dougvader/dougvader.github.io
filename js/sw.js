@@ -1,11 +1,10 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  '/',
-  '/css/styles.css',
-  '/js/dbhelper.js',
-  '/js/main.js',
-  '/js/restaurant_info.js',
-  '/data/restaurants.js'
+  'css/styles.css',
+  'js/dbhelper.js',
+  'js/main.js',
+  'js/restaurant_info.js',
+  'data/restaurants.js'
 ];
 
 if ('serviceWorker' in navigator) {
