@@ -8,8 +8,11 @@ var urlsToCache = [
 ];
 
 self.addEventListener('install', function(event) {
+  console.log('event listener triggered');
   event.waitUntil(
     caches.open('my-site-cache-v1').then(function(cache) {
+      console.log('opening existing cache');
+      console.log('adding urls to cache');
       return cache.addAll(urlsToCache);
     }));
 });
