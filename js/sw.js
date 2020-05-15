@@ -13,6 +13,8 @@ self.addEventListener('install', function(event) {
     caches.open('my-site-cache-v1').then(function(cache) {
       console.log('opening existing cache');
       console.log('adding urls to cache');
-      return cache.addAll(urlsToCache);
+      return cache.addAll([
+        '/css/styles.css'
+      ]);
     }));
 });
